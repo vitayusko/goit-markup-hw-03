@@ -286,7 +286,7 @@ width: calc((100% - 72px) / 4);
 }
 
 .li-team-section-text {
-    margin: 32px 0;
+    padding: 32px 0;
 }
 
 
