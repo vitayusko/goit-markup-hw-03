@@ -1,3 +1,27 @@
+/* Resetting CSS default settings */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ {
+    margin: 0;
+}
+
+ /* BODY */
+
 .body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px; 
@@ -22,7 +46,37 @@
     list-style-type: none;
 }
 
+/* container */
+
+.container {
+    max-width: 1158px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin:0 auto;
+    }
+
 /* header */
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar .ul {
+    display: flex;
+    gap: 40px;
+}
+
+.address .ul {
+    display: flex;
+    gap: 40px;
+}
+
 .nav-adress-item {
     text-decoration: none;
     letter-spacing: 0.02em;
@@ -63,8 +117,8 @@
     text-transform: uppercase;
     font-size: 18px;
     line-height: 1.17;
-    letter-spacing: 0.03em
-
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .studio {
@@ -73,6 +127,11 @@
 }
 
 /* top section */
+
+.top-section .container {
+    padding: 188px 0;
+    max-width: 556px;
+}
 
 .top-section {
     background-color: #2e2f42;
@@ -84,7 +143,9 @@
     letter-spacing: 0.02em;
     line-height: 1.07;
     color: #FFFFFF;
-    text-align: center
+    text-align: center;
+    margin: 0;
+    margin-bottom: 48px;
 }
 
 .button {
@@ -95,7 +156,10 @@
         line-height: 24px;
         background-color: #4D5AE5;
         color: #FFFFFF;
-        cursor: pointer
+        cursor: pointer;
+        padding: 16px 32px;
+        margin: 0 auto;
+        display: block;
 }
 
 .button:hover {
@@ -108,9 +172,26 @@
 
 /* feauture section */
 
+.features-section .container .h2 {
+    display: none;
+}
+
+.container .features-container {
+    display: flex;
+        gap: 8px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+}
+ 
+.li-features-section {
+        align-items: center;
+  width: calc ((100% - 24px) / 3);
+        
+}
 .paragrapf {
     letter-spacing: 0.02em;
         line-height: 1.5;
+        margin: 0;
 }
 
 .h-features {
@@ -119,12 +200,34 @@
         letter-spacing: 0.02em;
         color: #2e2f42;
         line-height: 1.2;
+        margin: 0;
+        margin-bottom: 8px;
+}
+
+.li-features-section .paragrapf {
+    margin: 0;
+}
+
+.features-container .ul {
+  display:flex; 
+  gap: 24px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 /* team-section */
 
+.team-container .ul {
+    display: flex;
+    margin: 0 auto;
+    gap: 24px;
+}
 .team-section {
     background-color: #F4F4FD;
+}
+
+.team-section .container {
+    padding: 120px 0;
 }
 
 .h-main-team-section {
@@ -135,6 +238,8 @@
         text-align: center;
         line-height: 1.11;
         text-transform: capitalize;
+        margin: 0;
+        padding-bottom: 72px;
 }
 
 .h-team-section {
@@ -143,13 +248,37 @@
     letter-spacing: 0.02em;
     color: #2e2f42;
     line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 .li-team-section {
     background-color: #FFFFFF
 }
 
+.li-team-section .paragrapf {
+    text-align: center;
+    margin: 0;
+}
+
+.li-team-section-text {
+    margin: 32px 16px ;
+}
+
+
 /* portfolio-section */
+
+.portfolio-section .container {
+    padding: 120px 0;
+}
+
+
+.portfolio-container .ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
 
 .h-portfolio-section {
     font-weight: 500;
@@ -157,13 +286,35 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin: 0;
+    padding-left: 16px;
+    padding-bottom: 8px;
 }
+
+.portfolio-container .ul .paragrapf {
+    margin: 0;
+    padding-left: 16px;
+}
+
+.portfolio-container-text {
+    padding: 32px 0;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+
 
 /* footer */
 
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
+    display: flex;
+    
 }
+ .footer .container {
+    max-width: 324px; 
+    justify-content: flex-start }
 
 .footer-paragraph {
     color: #F4F4FD;
