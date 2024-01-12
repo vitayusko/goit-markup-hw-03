@@ -195,9 +195,9 @@ img {
     display: none;
 }
 
-.container .features-container {
+.features-section .container .ul-list {
     display: flex;
-        gap: 8px;
+        gap: 24px;
         margin: 0 auto;
         flex-wrap: wrap;
 }
@@ -225,11 +225,6 @@ width: calc((100% - 72px) / 4);
 
 .li-features-section .paragrapf {
     margin: 0;
-}
-
-.features-container .ul-list {
-  display:flex; 
-  gap: 24px;
 }
 
 .ul-list {
