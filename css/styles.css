@@ -192,7 +192,7 @@ img {
     }
 
 .features-section .container .h2 {
-    display: none;
+    visibility: hidden;
 }
 
 .features-section .container .ul-list {
